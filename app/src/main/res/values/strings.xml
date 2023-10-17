@@ -1,3 +1,28 @@
 <resources>
+    //Login
     <string name="app_name">StudentApp</string>
+    <string name="welcome">Welcome back!</string>
+    <string name="missed">You’ve been missed</string>
+    <string name="no_account">Don’t have an account?</string>
+    <string name="sign_up"> Sign up</string>
+    <string name="log_in">Login</string>
+    <string name="remember">Remember me</string>
+    <string name="forget_pass">Forgot password?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="student">Student</string>
+    <string name="parent">Parent</string>
+    //Register
+    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="Confirm_password">Confirm Password</string>
+
+    <string name="gender">Select Gender</string>
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+    />
+
 </resources>
