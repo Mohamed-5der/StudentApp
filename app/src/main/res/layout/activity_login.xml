@@ -20,68 +20,88 @@
         <TextView
             android:text="@string/welcome"
             android:layout_width="wrap_content"
-            android:textSize="32dp"
-            android:layout_marginTop="20dp"
+            android:textSize="@dimen/text_size_big"
+            android:layout_marginTop="@dimen/margin_top"
+            android:fontFamily="@font/cairo"
             android:textColor="@color/black"
             android:layout_height="wrap_content"
             />
         <TextView
+            android:id="@+id/txt_missed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14dp"
+            android:textSize="@dimen/text_size_small"
             android:layout_marginTop="8dp"
             android:textColor="#6D2A8B"
+            android:fontFamily="@font/cairo"
             android:text="@string/missed"/>
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-             android:layout_marginEnd="15dp">
-
-            <EditText
-                android:id="@+id/et_email"
-                android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginStart="@dimen/mar_rig_lift"
+            android:layout_marginEnd="@dimen/mar_rig_lift"
+            android:background="@drawable/et_background_custom"
+            >
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/code_phone"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/et_background_custom"
-                android:inputType="textEmailAddress"
-                android:hint="@string/email" />
-        </com.google.android.material.textfield.TextInputLayout>
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_defaultNameCode="eg"
+                android:layout_gravity="center_vertical"
+                />
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/phone"
+                />
+
+        </LinearLayout>
+
+
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="15dp">
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:background="@drawable/et_background_custom"
+            app:endIconMode="clear_text"
+            android:layout_marginLeft="@dimen/mar_rig_lift"
+            android:layout_marginRight="@dimen/mar_rig_lift"
+            android:layout_marginTop="@dimen/margin_top"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/yellow">
 
-           <EditText
-              android:id="@+id/et_password"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-               android:hint="@string/password"
-              android:background="@drawable/et_background_custom"
-              android:inputType="textPassword" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textColor="@color/yellow"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
       <RelativeLayout
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginLeft="16dp"
-          android:layout_marginTop="20dp"
+          android:layout_marginTop="@dimen/margin_top"
+          android:layout_marginLeft="@dimen/mar_rig_lift"
           android:layout_marginRight="16dp">
-          <CheckBox
-              android:id="@+id/chx_remember"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:textSize="14sp"
-              android:layout_alignParentStart="true"
-              android:text="@string/remember"/>
           <TextView
               android:id="@+id/txt_forget_pass"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/forget_pass"
-              android:textSize="14sp"
+              android:textSize="@dimen/text_size_small"
               android:textColor="@color/yellow"
               android:textStyle="bold"
               android:layout_centerVertical="true"
@@ -91,12 +111,13 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/btn_size"
             android:background="@drawable/btn_background_login_custom"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginRight="@dimen/mar_rig_lift"
+            android:layout_marginLeft="@dimen/mar_rig_lift"
             android:text="@string/log_in"
-            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cairo"
+            android:layout_marginTop="@dimen/margin_top"
             android:textColor="@color/white"
             android:textSize="14sp"
             />
@@ -114,13 +135,15 @@
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:textColor="@color/black"
+             android:fontFamily="@font/cairo"
              android:text="@string/no_account"/>
          <TextView
              android:id="@+id/txt_signUp"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:text="@string/sign_up"
-             android:textSize="14sp"
+             android:textSize="@dimen/text_size_small"
+             android:fontFamily="@font/cairo"
              android:textColor="@color/yellow"/>
      </LinearLayout>
 </RelativeLayout>

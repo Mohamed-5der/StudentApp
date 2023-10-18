@@ -21,8 +21,11 @@
     <string-array name="gender_list">
         <item>Male</item>
         <item>Female</item>
-        <item>Others</item>
     </string-array>
-    />
+    //forget
+    <string name="forgot">Forgot password!</string>
+    <string name="code_phone">We will send code to your phone</string>
+    <string name="send">Send OTP</string>
+
 
 </resources>
