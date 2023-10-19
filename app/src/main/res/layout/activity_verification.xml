@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity">
+
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/mar_rig_lift"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/verification_ic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/verification"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_big" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background_custom">
+                <EditText
+                    android:id="@+id/et_ver1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:textColor="@color/yellow"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background_custom">
+                <EditText
+                    android:id="@+id/et_ver2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:textColor="@color/yellow"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background_custom">
+                <EditText
+                    android:id="@+id/et_ver3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:textColor="@color/yellow"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background_custom">
+                <EditText
+                    android:id="@+id/et_ver4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/yellow"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:layout_marginLeft="@dimen/mar_rig_lift"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/mar_rig_lift"
+            android:background="@drawable/btn_background_login_custom"
+            android:fontFamily="@font/cairo"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cairo"
+            android:text="@string/receive_code"/>
+        <TextView
+            android:id="@+id/txt_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend"
+            android:textSize="@dimen/text_size_small"
+            android:fontFamily="@font/cairo"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

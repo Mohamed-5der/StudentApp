@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.circularreveal.CircularRevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_custom"
+        android:orientation="vertical"
+        tools:ignore="MissingDefaultResource">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="24dp"
+           android:src="@drawable/sucsessfully"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/changed_pass"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_small"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:layout_marginLeft="@dimen/mar_rig_lift"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/mar_rig_lift"
+            android:background="@drawable/btn_background_login_custom"
+            android:fontFamily="@font/cairo"
+            android:layout_marginBottom="20dp"
+            android:text="@string/home"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+ <corners android:radius="20dp"/>
+ <solid android:color="@color/white"/>
+ <padding android:left="@dimen/mar_rig_lift" android:right="@dimen/mar_rig_lift"/>
+</shape>

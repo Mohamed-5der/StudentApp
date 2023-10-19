@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class ForgetPasswordActivity extends AppCompatActivity {
-Button send;
+public class VerificationActivity extends AppCompatActivity {
+Button confirm;
 ImageButton back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget_password);
-        send=findViewById(R.id.btn_send);
+        setContentView(R.layout.activity_verification);
+        confirm=findViewById(R.id.btn_confirm);
         back=findViewById(R.id.btn_back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -23,10 +23,10 @@ ImageButton back;
                 onBackPressed();
             }
         });
-        send.setOnClickListener(new View.OnClickListener() {
+        confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),VerificationActivity.class);
+                Intent intent=new Intent(getApplicationContext(),NewPasswordActivity.class);
                 startActivity(intent);
             }
         });

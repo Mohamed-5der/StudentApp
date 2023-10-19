@@ -26,6 +26,16 @@
     <string name="forgot">Forgot password!</string>
     <string name="code_phone">We will send code to your phone</string>
     <string name="send">Send OTP</string>
+    <string name="verification">Verification code</string>
+    <string name="confirm">Confirm</string>
+    <string name="new_pass">New Password</string>
+    <string name="save">Save</string>
+    <string name="home">Home page</string>
+    <string name="receive_code">Didn’t receive code?</string>
+    <string name="resend"> Resend</string>
+    <string name="haveAn"> have an account? </string>
+    <string name="please">Please don’t forget this one too</string>
+    <string name="changed_pass">Your password changed sucsessfully </string>
 
 
 </resources>
