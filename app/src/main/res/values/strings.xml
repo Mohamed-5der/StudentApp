@@ -36,6 +36,21 @@
     <string name="haveAn"> have an account? </string>
     <string name="please">Please don’t forget this one too</string>
     <string name="changed_pass">Your password changed sucsessfully </string>
+    />
+    //Languuage
+    <string name="choose">Choose your language</string>
+    <string name="arabic">العربيه</string>
+    <string name="english">English</string>
+    <string name="con">Confirm</string>
+
+    //onboarding
+    <string name="title">Discounts on all stores</string>
+    <string name="body1">Lots of discount at different rates</string>
+    <string name="body2">from all stores and brands.All of this</string>
+    <string name="body3">is available to us</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
 
 
 </resources>

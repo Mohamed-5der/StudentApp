@@ -27,14 +27,36 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            android:exported="false" >
+    
         </activity>
 
+            android:name=".Onboarding_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Language_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            />
+        <activity
+            android:name=".SelectUserActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
