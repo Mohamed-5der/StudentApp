@@ -29,6 +29,7 @@
     <string name="home">Home</string>
     <string name="attendance">Attendance</string>
     <string name="quiz">Quiz</string>
+    <string name="review">Review note</string>
     <string name="files">Files</string>
     <string name="more">More</string>
     <string name="receive_code">Didn’t receive code?</string>
