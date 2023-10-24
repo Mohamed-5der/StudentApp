@@ -64,6 +64,8 @@
                         android:layout_height="match_parent"
                         android:background="@android:color/transparent"
                         android:hint="@string/phone"
+                        android:textColorHint="@color/black"
+                        android:inputType="phone"
                         />
 
                 </LinearLayout>
@@ -84,7 +86,7 @@
                     app:boxCornerRadiusBottomStart="18dp"
                     app:boxCornerRadiusTopEnd="18dp"
                     app:boxCornerRadiusTopStart="18dp"
-                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeColor="@color/yellow"
                     app:boxStrokeWidth="1dp"
                     android:textColorHint="@color/black"
                     android:textSize="18sp"

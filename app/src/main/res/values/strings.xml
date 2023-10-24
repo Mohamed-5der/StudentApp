@@ -18,10 +18,8 @@
     <string name="Confirm_password">Confirm Password</string>
 
     <string name="gender">Select Gender</string>
-    <string-array name="gender_list">
-        <item>Male</item>
-        <item>Female</item>
-    </string-array>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
     //forget
     <string name="forgot">Forgot password!</string>
     <string name="code_phone">We will send code to your phone</string>
@@ -30,12 +28,18 @@
     <string name="confirm">Confirm</string>
     <string name="new_pass">New Password</string>
     <string name="save">Save</string>
-    <string name="home">Home page</string>
+    <string name="home">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="quiz">Quiz</string>
+    <string name="files">Files</string>
+    <string name="more">More</string>
     <string name="receive_code">Didn’t receive code?</string>
     <string name="resend"> Resend</string>
     <string name="haveAn"> have an account? </string>
     <string name="please">Please don’t forget this one too</string>
     <string name="changed_pass">Your password changed sucsessfully </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

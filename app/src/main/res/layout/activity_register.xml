@@ -98,6 +98,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
                 android:hint="@string/phone"
+                android:textColorHint="@color/black"
                 />
 
         </LinearLayout>
@@ -177,20 +178,25 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/btn_size"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="15dip"
             android:layout_marginRight="15dip"
             android:background="@drawable/et_background_custom">
-            <Spinner
-                android:id="@+id/gender_spinner"
-                android:layout_width="fill_parent"
-                android:layout_height="@dimen/btn_size"
-                android:prompt="@string/gender"
-                android:entries="@array/gender_list"
-                />
+
+            <TextView
+                android:id="@+id/txt_selectGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/drop_down_icon"/>
 
         </LinearLayout>
+
 
 
 
