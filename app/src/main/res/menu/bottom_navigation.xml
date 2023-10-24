@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/action_home"
+            android:icon="@drawable/home_yellow"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/action_attendance"
+            android:icon="@drawable/calendar_yellow"
+            android:title="@string/attendance"/>
+        <item
+            android:id="@+id/action_quiz"
+            android:icon="@drawable/health_yellow"
+            android:title="@string/quiz"/>
+        <item
+            android:id="@+id/action_files"
+            android:icon="@drawable/folder__yellow"
+            android:title="@string/files"/>
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/more_yellow"
+        android:title="@string/more"/>
+
+</menu>
