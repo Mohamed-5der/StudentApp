@@ -15,6 +15,7 @@
             android:name=".NewPasswordActivity"
             android:exported="false" />
         <activity
+<<<<<<< Updated upstream
             android:name=".VerificationActivity"
             android:exported="false" />
         <activity
@@ -42,6 +43,24 @@
             android:exported="true" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
+=======
+            android:name=".SelectUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            />
+        <activity
+            android:name=".Language_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+>>>>>>> Stashed changes
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
