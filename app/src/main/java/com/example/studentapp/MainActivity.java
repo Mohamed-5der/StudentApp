@@ -13,8 +13,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView namePage;
-    BottomNavigationView bottomNavigationView;
+   public static TextView namePage;
+    public static BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment = new HomeFragment();
     MoreFragment moreFragment = new MoreFragment();
     FilesFragment filesFragment = new FilesFragment();

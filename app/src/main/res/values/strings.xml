@@ -16,6 +16,8 @@
     <string name="Confirm_password">Confirm Password</string>
 
     <string name="gender">Select Gender</string>
+    <string name="group">Select Group</string>
+    <string name="nameGroup">Group</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
 
@@ -27,9 +29,12 @@
     <string name="new_pass">New Password</string>
     <string name="save">Save</string>
     <string name="home">Home</string>
+    <string name="quiz_answer">Quiz Answer</string>
+    <string name="answer">Answer</string>
     <string name="attendance">Attendance</string>
     <string name="quiz">Quiz</string>
-    <string name="review">Review note</string>
+    <string name="review">Review Note</string>
+    <string name="historyQuiz">Quizzes History</string>
     <string name="files">Files</string>
     <string name="more">More</string>
     <string name="receive_code">Didn’t receive code?</string>
@@ -38,9 +43,13 @@
     <string name="please">Please don’t forget this one too</string>
     <string name="changed_pass">Your password changed sucsessfully </string>
     <string name="choose">Choose your language</string>
+    <string name="successfully_sent">Your answers have been sent successfully and your grade</string>
     <string name="arabic">العربيه</string>
     <string name="english">English</string>
     <string name="con">Confirm</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sure">Are you sure you are \n sending your answers?</string>
 
     <string name="title">Discounts on all stores</string>
     <string name="body1">Lots of discount at different rates</string>
@@ -48,9 +57,12 @@
     <string name="body3">is available to us</string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
+    <string name="sucsessfully">Your Request send sucsessfully </string>
+    <string name="sendRequest">Send request</string>
+    <string name="QR">Please show your QR code</string>
+    <string name="request">Request to change group</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="today_quiz">Today quizzes</string>
     <string name="latest_files">latest files</string>
     <string name="no_quiz">There is no quiz today</string>

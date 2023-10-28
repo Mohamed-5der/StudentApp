@@ -12,6 +12,12 @@
         android:theme="@style/Theme.StudentApp"
         tools:targetApi="31">
         <activity
+            android:name=".QuizAnswerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewPasswordActivity"
             android:exported="false" />
         <activity
@@ -19,38 +25,32 @@
             android:exported="false" />
         <activity
             android:name=".ForgetPasswordActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false" >
-    
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Onboarding_Activity"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Language_Activity"
             android:exported="false" />
         <activity
             android:name=".Splash_Activity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-<!--        <activity-->
-<!--            android:name=".SelectUserActivity"-->
-<!--            android:exported="false">-->
-<!--            -->
-<!--        </activity>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name=".SelectUserActivity" -->
+        <!-- android:exported="false"> -->
+        <!--  -->
+        <!-- </activity> -->
         <activity
             android:name=".MainActivity"
             android:exported="false" />
