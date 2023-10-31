@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/personal_photo"
+
     tools:context=".Onboarding_Activity">
 
     <LinearLayout
@@ -61,7 +62,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="24dp"
+                        
                         android:orientation="horizontal">
                     </LinearLayout>
 
@@ -70,7 +71,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="38dp"
+                        android:layout_marginTop="44dp"
                         android:background="@drawable/button_shape"
                         android:text="@string/next"
                         android:fontFamily="@font/cairo"
@@ -88,7 +89,7 @@
                         android:textSize="16sp"
                         android:layout_alignParentBottom="true"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginBottom="20dp"/>
+                        android:layout_marginBottom="10dp"/>
                 </RelativeLayout>
 
             </LinearLayout>

@@ -36,7 +36,7 @@ public class Onboarding_Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (getitem(0)< 3 )
+                if (getitem(0)< 2 )
                     msliderviewpager.setCurrentItem(getitem(1),true);
                 else {
                     Intent i = new Intent(Onboarding_Activity.this,LoginActivity.class);
@@ -78,7 +78,7 @@ public class Onboarding_Activity extends AppCompatActivity {
 
     public void setUpindicator(int position) {
 
-        dots = new TextView[4];
+        dots = new TextView[3];
         mDotLayout.removeAllViews();
 
         for (int i = 0; i < dots.length; i++) {
@@ -87,11 +87,11 @@ public class Onboarding_Activity extends AppCompatActivity {
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226"));
             dots[i].setTextSize(35);
-            dots[i].setTextColor(getResources().getColor(R.color.purple_200, getApplicationContext().getTheme()));
+            dots[i].setTextColor(getResources().getColor(R.color.black, getApplicationContext().getTheme()));
             mDotLayout.addView(dots[i]);
         }
 
-        dots[position].setTextColor(getResources().getColor(R.color.purple_200, getApplicationContext().getTheme()));
+        dots[position].setTextColor(getResources().getColor(R.color.orange, getApplicationContext().getTheme()));
 
     }
 
@@ -103,11 +103,21 @@ public class Onboarding_Activity extends AppCompatActivity {
 
         @Override
         public void onPageSelected(int position) {
+            setUpindicator(position);
+
+            if (position < 2){
+
+                skipbtn.setVisibility(View.VISIBLE);
+            }else {
+                skipbtn.setVisibility(View.INVISIBLE);
+            }
 
         }
 
         @Override
         public void onPageScrollStateChanged(int state) {
+
+
 
         }
 

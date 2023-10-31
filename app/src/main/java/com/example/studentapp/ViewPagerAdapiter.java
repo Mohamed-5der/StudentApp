@@ -26,9 +26,10 @@ public class ViewPagerAdapiter extends PagerAdapter {
     };
 
     int bodys[] = {
-            R.string.body1,
-            R.string.body2,
-            R.string.body3
+            R.string.body,
+            R.string.body,
+            R.string.body
+
     };
 
     public  ViewPagerAdapiter(Context context){
@@ -55,16 +56,14 @@ public class ViewPagerAdapiter extends PagerAdapter {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.slider_layout,container,false);
 
-        TextView slidertitle = (TextView) view.findViewById(R.id.texttitle);
-        TextView sliderbody1 = (TextView) view.findViewById(R.id.body1);
-        TextView sliderbody2 = (TextView) view.findViewById(R.id.body2);
-        TextView sliderbody3 = (TextView) view.findViewById(R.id.body3);
+        TextView slidertitle =  view.findViewById(R.id.texttitle);
+        TextView sliderbody = (TextView) view.findViewById(R.id.body);
+
 
 
         slidertitle.setText(title[position]);
-        sliderbody1.setText(bodys[position]);
-        sliderbody2.setText(bodys[position]);
-        sliderbody3.setText(bodys[position]);
+        sliderbody.setText(bodys[position]);
+
 
         container.addView(view);
 

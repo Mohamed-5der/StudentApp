@@ -14,6 +14,8 @@ public class Language_Activity extends AppCompatActivity {
 
    ImageButton ARI;
    ImageButton ENG;
+
+   Button con;
     private boolean isResume;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class Language_Activity extends AppCompatActivity {
                 else {
                     Intent intent =new Intent(Language_Activity.this,Onboarding_Activity.class);
                     startActivity(intent);
+                    finish();
                 }
 
             }

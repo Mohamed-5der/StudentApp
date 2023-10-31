@@ -52,9 +52,8 @@
     <string name="sure">Are you sure you are \n sending your answers?</string>
 
     <string name="title">Discounts on all stores</string>
-    <string name="body1">Lots of discount at different rates</string>
-    <string name="body2">from all stores and brands.All of this</string>
-    <string name="body3">is available to us</string>
+
+    <string name="body">Lots of discount at different rates\n from all stores and brands All of this\n is available to us </string>
     <string name="next">Next</string>
     <string name="skip">Skip</string>
     <string name="submit">Submit</string>
