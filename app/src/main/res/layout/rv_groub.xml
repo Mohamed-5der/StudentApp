@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/l_selectGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background_login_custom"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_nameGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nameGroup"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -37,9 +37,9 @@ public class HomeFragment extends Fragment {
     }
     public void setupRvQuiz(){
         ArrayList<DataQuiz> data = new ArrayList<>();
-        data.add(new DataQuiz("Quiz 1"));
-        data.add(new DataQuiz("Quiz 2"));
-        data.add(new DataQuiz("Quiz 3"));
+        data.add(new DataQuiz("Quiz 1",""));
+        data.add(new DataQuiz("Quiz 2",""));
+        data.add(new DataQuiz("Quiz 3",""));
         quizAdapter = new QuizAdapter(data);
         RecyclerView.LayoutManager lm = new LinearLayoutManager(getActivity());
         rv_Quiz.setLayoutManager(lm);

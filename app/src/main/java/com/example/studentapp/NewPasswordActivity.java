@@ -30,25 +30,34 @@ ImageButton back;
     save.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            showContinueAsDialog();
+            showDialog();
         }
     });
     }
-    public void showContinueAsDialog(){
+    public void showDialog(){
                 final Dialog dialog = new Dialog(NewPasswordActivity.this);
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialog.setCancelable(false);
                 dialog.setContentView(R.layout.sucsessfully);
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
                 dialog.show();
-                Button tourist =dialog.findViewById(R.id.btn_home);
-                tourist.setOnClickListener(new View.OnClickListener() {
+                Button home =dialog.findViewById(R.id.btn_home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(NewPasswordActivity.this,LoginActivity.class);
+                startActivity(intent);
+                dialog.dismiss();
+                finish();
+            }
+        });
+
+        ImageButton close =dialog.findViewById(R.id.btn_close);
+
+                close.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(NewPasswordActivity.this,LoginActivity.class);
-                        startActivity(intent);
                         dialog.dismiss();
-                        finish();
                     }
                 });
      }

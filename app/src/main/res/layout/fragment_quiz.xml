@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".QuizFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="@string/today_quiz"
+        android:textSize="18sp"
+        android:layout_marginStart="@dimen/mar_rig_lift"
+        android:layout_marginEnd="@dimen/mar_rig_lift"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_quiz_today"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/mar_rig_lift"
+            android:layout_marginLeft="@dimen/mar_rig_lift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/historyQuiz"
+        android:textSize="18sp"
+        android:layout_marginStart="@dimen/mar_rig_lift"
+        android:layout_marginEnd="@dimen/mar_rig_lift"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_quizHistory"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_marginRight="@dimen/mar_rig_lift"
+            android:layout_marginLeft="@dimen/mar_rig_lift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

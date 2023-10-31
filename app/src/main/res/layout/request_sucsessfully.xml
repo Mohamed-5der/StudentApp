@@ -22,7 +22,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/sucsessfully" />
 
@@ -39,14 +39,17 @@
                 android:src="@drawable/user_remove" />
 
         </RelativeLayout>
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/changed_pass"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
+            android:text="@string/sucsessfully"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_size_small"/>
+            android:textSize="@dimen/text_size_small" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_home"
             android:layout_width="match_parent"
@@ -54,9 +57,9 @@
             android:layout_marginLeft="@dimen/mar_rig_lift"
             android:layout_marginTop="@dimen/margin_top"
             android:layout_marginRight="@dimen/mar_rig_lift"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/btn_background_login_custom"
             android:fontFamily="@font/cairo"
-            android:layout_marginBottom="20dp"
             android:text="@string/home"
             android:textColor="@color/white"
             android:textSize="14sp" />

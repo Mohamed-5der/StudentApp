@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AttendanceFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_margin="@dimen/mar_rig_lift"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/QR"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_small" />
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/request"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_small" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/et_background_custom">
 
-</FrameLayout>
+            <TextView
+                android:id="@+id/txt_selectGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/group"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/drop_down_icon"/>
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sendRequest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_size"
+            android:background="@drawable/btn_background_login_custom"
+            android:layout_marginRight="@dimen/mar_rig_lift"
+            android:layout_marginLeft="@dimen/mar_rig_lift"
+            android:text="@string/sendRequest"
+            android:fontFamily="@font/cairo"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
