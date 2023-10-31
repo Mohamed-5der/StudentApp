@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        tools:ignore="ExtraText">
         <activity
             android:name=".QuizAnswerActivity"
             android:exported="false" />
@@ -46,6 +47,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+         </activity>
+
+        <activity
+            android:name=".Splash_Activity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".Language_Activity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity">
         </activity> <!-- <activity -->
         <!-- android:name=".SelectUserActivity" -->
         <!-- android:exported="false"> -->
