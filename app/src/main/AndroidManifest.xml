@@ -12,6 +12,9 @@
         android:theme="@style/Theme.StudentApp"
         tools:targetApi="31">
         <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
             android:name=".QuizAnswerActivity"
             android:exported="false" />
         <activity

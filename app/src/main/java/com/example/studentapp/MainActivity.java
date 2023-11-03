@@ -7,13 +7,18 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
-   public static TextView namePage;
+    ImageButton notification;
+
+    public static TextView namePage;
     public static BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment = new HomeFragment();
     MoreFragment moreFragment = new MoreFragment();
@@ -27,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         namePage=findViewById(R.id.txt_namePage);
+        notification=findViewById(R.id.btn_notification);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this,NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
         bottomNavigationView =  findViewById(R.id.bottom_navigation);
         selectedNavigationItem();
         bottomNavigationView.setSelectedItemId(R.id.action_home);

@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class AnswerQuizAdapter extends RecyclerView.Adapter<AnswerViewHolder> {
-    ArrayList<Answer> answers=new ArrayList<>();
+    ArrayList<Answer>   answers=new ArrayList<>();
 
     public AnswerQuizAdapter(ArrayList<Answer> answers) {
         this.answers=answers;
