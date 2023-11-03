@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp">
+        <RelativeLayout
+            android:id="@+id/l_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="12dp">
+                <ImageView
+                    android:id="@+id/iv_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F3DDCF"
+                    android:padding="12dp"
+                    android:src="@drawable/notifications_icon"/>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:layout_toRightOf="@+id/card">
+                <TextView
+                    android:id="@+id/txt_visitDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visit"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3:30 pm"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/gray"/>
+                <TextView
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your takeaway order is approved Hury up  confirm your order now"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txt_visitDone"
+                    android:textColor="@color/black"/>
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F3DDCF"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/l_relative"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
