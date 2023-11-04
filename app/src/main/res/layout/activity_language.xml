@@ -74,10 +74,12 @@
                     android:layout_toRightOf="@+id/arabic"
                     android:layout_marginLeft="16dp"
                     />
-                <ImageView
+                <ImageButton
+                    android:id="@+id/ARI"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/circle"
+                    android:background="@color/white"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="24dp"
                     android:layout_alignParentRight="true"/>
@@ -116,10 +118,12 @@
                     android:layout_toRightOf="@+id/english"
                     android:layout_marginLeft="16dp"
                     />
-                <ImageView
+                <ImageButton
+                    android:id="@+id/ENG"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/circle"
+                    android:background="@color/white"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="24dp"
                     android:layout_alignParentRight="true"/>
@@ -129,6 +133,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/confirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="24dp"
