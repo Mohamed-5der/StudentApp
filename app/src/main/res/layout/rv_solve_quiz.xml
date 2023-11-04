@@ -73,6 +73,7 @@
                 android:drawableStart="@drawable/check_true"
                 android:text="Correct Answer"
                 android:textColor="#038E5C"
+                android:visibility="gone"
                 />
         </LinearLayout>
 

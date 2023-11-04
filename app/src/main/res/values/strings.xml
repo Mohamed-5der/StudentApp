@@ -11,6 +11,7 @@
     <string name="password">Password</string>
     <string name="student">Student</string>
     <string name="parent">Parent</string>
+    <string name="visit">Visit Done</string>
     <string name="name">Name</string>
     <string name="phone">Phone Number</string>
     <string name="Confirm_password">Confirm Password</string>
@@ -33,6 +34,7 @@
     <string name="answer">Answer</string>
     <string name="attendance">Attendance</string>
     <string name="quiz">Quiz</string>
+    <string name="notification">Notification</string>
     <string name="review">Review Note</string>
     <string name="historyQuiz">Quizzes History</string>
     <string name="files">Files</string>
