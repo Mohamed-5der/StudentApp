@@ -68,5 +68,12 @@
     <string name="latest_files">latest files</string>
     <string name="no_quiz">There is no quiz today</string>
 
+    <string name="profile">Profile</string>
+    <string name="changeLang">Change Language</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="contact">Contact Us</string>
+    <string name="logout">Log out</string>
+    <string name="Privacy">Privacy Policy</string>
+
 
 </resources>
