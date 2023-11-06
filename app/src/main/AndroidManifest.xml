@@ -10,8 +10,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentApp"
-        tools:targetApi="31"
-        tools:ignore="ExtraText">
+        tools:ignore="ExtraText"
+        tools:targetApi="31">
+        <activity
+            android:name=".Profile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Contact_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Privecy_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Terms_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_Password_Activity"
+            android:exported="false" />
         <activity
             android:name=".NotificationActivity"
             android:exported="false" />
@@ -37,9 +52,9 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:theme="@style/Theme.Design.NoActionBar"
             android:name=".Onboarding_Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".Language_Activity"
             android:exported="false" />
@@ -51,8 +66,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-         </activity>
-        <!-- <activity -->
+        </activity> <!-- <activity -->
         <!-- android:name=".SelectUserActivity" -->
         <!-- android:exported="false"> -->
         <!--  -->

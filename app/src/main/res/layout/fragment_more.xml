@@ -11,7 +11,9 @@
         android:layout_height="match_parent"
         android:layout_marginTop="20dp"
         android:orientation="vertical">
-    <androidx.cardview.widget.CardView
+
+      <androidx.cardview.widget.CardView
+        android:id="@+id/card_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
@@ -21,6 +23,7 @@
         android:layout_marginBottom="12dp"
         app:cardCornerRadius="10dp">
         <LinearLayout
+            android:id="@+id/profile"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:orientation="horizontal"
@@ -48,6 +51,7 @@
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_language"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
@@ -84,6 +88,7 @@
     </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
@@ -119,6 +124,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_terms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
@@ -154,6 +160,7 @@
     </LinearLayout>
     </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_privacy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="10dp"
@@ -190,6 +197,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="10dp"

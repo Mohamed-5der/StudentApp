@@ -1,14 +1,14 @@
 package com.example.studentapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Language_Activity extends AppCompatActivity {
 
@@ -16,7 +16,9 @@ public class Language_Activity extends AppCompatActivity {
    ImageButton ENG;
 
    Button con;
+   Button profile;
     private boolean isResume;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,8 @@ public class Language_Activity extends AppCompatActivity {
         Button confirm =findViewById(R.id.confirm);
         ARI= findViewById(R.id.ARI);
         ENG= findViewById(R.id.ENG);
+
+        
 
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
