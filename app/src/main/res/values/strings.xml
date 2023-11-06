@@ -8,6 +8,7 @@
     <string name="remember">Remember me</string>
     <string name="forget_pass">Forgot password?</string>
     <string name="email">Email</string>
+    <string name="email_address">Email Address</string>
     <string name="password">Password</string>
     <string name="student">Student</string>
     <string name="parent">Parent</string>
@@ -75,7 +76,10 @@
     <string name="profile">Profile</string>
     <string name="changeLang">Change Language</string>
     <string name="terms">Terms and Conditions</string>
+    <string name="terms_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.t labore et dolore magna.Lorem ipsum ..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.Lorem ipsum ..</string>
     <string name="contact">Contact Us</string>
+    <string name="find">Find us on social media</string>
+    <string name="contact_number">Contact Number</string>
     <string name="logout">Log out</string>
     <string name="Privacy">Privacy Policy</string>
     <!-- TODO: Remove or change this placeholder text -->
