@@ -1,6 +1,7 @@
 package com.example.studentapp;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Edit_Password_Activity extends AppCompatActivity {
     Button save;
+    ImageButton back;
 
 
     @Override
@@ -21,6 +23,17 @@ public class Edit_Password_Activity extends AppCompatActivity {
 
 
         save = findViewById(R.id.btn_save);
+        back = findViewById(R.id.btn_back);
+
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Edit_Password_Activity.this,Profile_Activity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override

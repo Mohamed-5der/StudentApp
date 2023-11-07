@@ -40,19 +40,15 @@
 
         </RelativeLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_home"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/btn_size"
-            android:layout_marginLeft="@dimen/mar_rig_lift"
-            android:layout_marginTop="@dimen/margin_top"
-            android:layout_marginRight="@dimen/mar_rig_lift"
-            android:layout_marginBottom="20dp"
-            android:background="@color/white"
-            android:fontFamily="@font/cairo"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="28dp"
             android:text="@string/saved_data"
             android:textColor="@color/black"
-            android:textSize="14sp" />
+            android:textSize="@dimen/text_size_small" />
 
     </com.google.android.material.circularreveal.CircularRevealLinearLayout>
 </RelativeLayout>

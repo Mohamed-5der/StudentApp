@@ -23,6 +23,8 @@ public class Profile_Activity extends AppCompatActivity {
     Button save;
     TextView gender;
 
+    ImageButton back;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,14 @@ public class Profile_Activity extends AppCompatActivity {
         edit = findViewById(R.id.edit);
         gender =findViewById(R.id.txt_selectGender);
         save = findViewById(R.id.btn_save);
+        back = findViewById(R.id.btn_back);
 
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         gender.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,8 +85,6 @@ public class Profile_Activity extends AppCompatActivity {
         });
 
     }
-
-
 
 
     public void showContinueAsDialog(){
