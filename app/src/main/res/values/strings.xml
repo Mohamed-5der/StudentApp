@@ -48,6 +48,7 @@
     <string name="please">Please don’t forget this one too</string>
     <string name="changed_pass">Your password changed sucsessfully </string>
     <string name="saved_pass">Your password saved sucsessfully </string>
+    <string name="saved_data">Your data saved sucsessfully </string>
     <string name="edit_pass">Edit Password </string>
     <string name="choose">Choose your language</string>
     <string name="successfully_sent">Your answers have been sent successfully and your grade</string>

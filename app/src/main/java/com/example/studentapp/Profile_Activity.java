@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -19,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Profile_Activity extends AppCompatActivity {
 
     RelativeLayout edit;
+    Button save;
     TextView gender;
 
     @SuppressLint("MissingInflatedId")
@@ -28,6 +30,9 @@ public class Profile_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         edit = findViewById(R.id.edit);
         gender =findViewById(R.id.txt_selectGender);
+        save = findViewById(R.id.btn_save);
+
+
         gender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,7 +49,36 @@ public class Profile_Activity extends AppCompatActivity {
                 finish();
             }
         });
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog();
+            }
+        });
     }
+
+
+    public void showDialog() {
+        final Dialog dialog = new Dialog(Profile_Activity.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.request_save_data);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        dialog.show();
+        ImageButton close=dialog.findViewById(R.id.btn_close);
+
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+    }
+
+
+
 
     public void showContinueAsDialog(){
         final Dialog dialog = new Dialog(Profile_Activity.this);
@@ -82,6 +116,6 @@ public class Profile_Activity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
-    }
 
 }
+    }

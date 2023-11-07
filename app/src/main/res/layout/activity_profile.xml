@@ -153,7 +153,7 @@
                 android:paddingVertical="10dp"
                 android:textSize="@dimen/text_size_small"
                 android:textStyle="bold"
-                android:inputType="text"
+                android:inputType="number"
                 />
 
 
@@ -201,7 +201,7 @@
         </RelativeLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_signup"
+            android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="@dimen/btn_size"
             android:background="@drawable/btn_background_login_custom"
